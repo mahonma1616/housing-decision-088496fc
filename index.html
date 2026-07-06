@@ -60,7 +60,7 @@
   .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
 
   .tablewrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:8px -2px}
-  table{width:100%; border-collapse:collapse; font-size:14px; min-width:660px}
+  table{width:100%; border-collapse:collapse; font-size:14px; min-width:680px}
   th,td{padding:10px 8px; text-align:center; border-bottom:1px solid var(--hair)}
   thead th{font-size:12.5px; color:var(--sub); font-weight:700; border-bottom:2px solid var(--line)}
   tbody th{text-align:left; font-weight:700; color:var(--ink); white-space:nowrap; font-size:13.5px}
@@ -71,6 +71,11 @@
   .do{background:var(--good)} .da{background:var(--warn)} .dx{background:var(--bad)}
   .price{font-weight:800; font-variant-numeric:tabular-nums}
   .verdict-row td, .verdict-row th{font-weight:800; font-size:14px; padding-top:12px; padding-bottom:12px}
+  .fin{width:100%; border-collapse:collapse; font-size:14px; min-width:520px}
+  .fin th,.fin td{padding:9px 10px; border-bottom:1px solid var(--hair); text-align:right; font-variant-numeric:tabular-nums}
+  .fin thead th{text-align:right; color:var(--sub); font-size:12.5px; border-bottom:2px solid var(--line)}
+  .fin tbody th{text-align:left; color:var(--ink)}
+  .fin .win td, .fin .win th{background:var(--bluebg); font-weight:800}
 
   .final{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:6px 4px; margin:12px 0}
   .frow{display:flex; gap:12px; align-items:flex-start; padding:14px 16px; border-bottom:1px solid var(--hair)}
@@ -86,25 +91,25 @@
 <body>
 <div class="wrap">
 
-  <p class="eyebrow">我が家の家さがし ／ 2026年7月・更新版</p>
+  <p class="eyebrow">我が家の家さがし ／ 2026年7月・更新版（お金の内訳つき）</p>
 
   <div class="hero">
-    <span class="tag">けつろん（こうしん）</span>
+    <span class="tag">けつろん</span>
     <h1>今のいちばんは、<span class="name">中海岸2丁目の家</span>です。</h1>
-    <p class="why">新しく2つの家（中海岸2丁目・南湖7丁目）を加えて、<b>5つの家をぜんぶ横ならびで比べ直しました</b>。その結果、<b>中海岸2丁目がいちばんバランスが良い</b>ことが分かりました。<br>土地の割合がいちばん高くて（約81%）・駅から歩けて（14分）・津波の想定も1m（湘南ではかなり浅い方）・そして<b>今の家賃16万の予算に収まる、唯一の家</b>です。値段は4,880万で、値引きで<b>4,800万前後</b>を狙えそうです。</p>
+    <p class="why">5つの家を横ならびで比べ直した結論です。<b>土地の割合がいちばん高くて（実力で約85%）・駅から歩けて（14分）・津波の想定も1m（湘南では浅い方）・そして毎月の支払いが今の家賃16万に収まる、唯一の家</b>です。値段は4,880万で、値引きで<b>4,800万前後</b>を狙えそう。毎月の支払いは<b>約14.2万</b>（諸費用込みのローン返済＋固定資産税・リフォーム別）と見込みます。</p>
   </div>
 
   <div class="note-prev">
-    <b>前回は「辻堂6丁目（toiro）」をおすすめしていました。</b>toiroも良い家ですが、6,680万で<b>予算を月4万ほどオーバー</b>します。中海岸2丁目は約4,800万で予算に収まり、土地の割合はtoiroより高い。だから今のいちばんは中海岸2丁目に変わりました。toiroは「予算を上げてもいいなら」の上位候補として残します。
+    <b>前回は「辻堂6丁目（toiro）」をおすすめしていました。</b>toiroも良い家ですが、6,680万で毎月<b>約20.3万</b>と予算を4万ほどオーバーします。加えて土地の形が旗竿ぎみで、<b>土地の実力は思ったより低め（約60%）</b>でした。中海岸2丁目は予算に収まり、土地の実力も高い。だって今のいちばんは中海岸2丁目です。
   </div>
 
   <div class="pt">
-    <b>中海岸2丁目が、5つの家の中で唯一「ぜんぶ○」に近い家です。</b><br>
-    宿題は2つだけ ―― ①相場より少し高め（値引きで4,800前後に下げたい） ②外壁など<b>修繕に100〜200万ほど上乗せ</b>が要りそう。ただし②は他の家もほぼ同じ（築年が近ければ差はわずか）なので、決め手にはなりません。
+    <b>中海岸2丁目が、5つの中で唯一「ぜんぶ○」に近い家です。</b><br>
+    宿題は2つ ―― ①相場より少し高め（値引きで4,800前後に下げたい） ②外壁など修繕に100〜200万の上乗せ（ただし他の家も同じくらいで、決め手にはなりません）。
   </div>
 
   <h2><span class="num">1.</span> 5つの家と「土地の見積もり額」</h2>
-  <p>いちばん大事なのは<b>「払うお金のうち、いくら分が土地か」</b>です。土地は値下がりしにくく、建物は年々値下がりするからです。下のグラフは、各家の値段を<b><span style="color:var(--blue)">■土地の見積もり額</span>（青）</b>と<b><span style="color:var(--muted)">■そのほか（建物など）</span>（灰色）</b>に分けたものです。</p>
+  <p>いちばん大事なのは<b>「払うお金のうち、いくら分が土地か」</b>。土地は値下がりしにくく、建物は年々値下がりするからです。青が<b>土地の見積もり額</b>、灰色が<b>そのほか（建物など）</b>です。</p>
 
   <div class="lgd">
     <span><span class="sw" style="background:var(--blue)"></span>土地の見積もり額（町の相場 × 敷地の広さ）</span>
@@ -113,43 +118,37 @@
 
   <figure>
     <svg viewBox="0 0 660 320" width="100%" role="img" aria-label="5つの家の値段を土地の見積もり額とそのほかに分けた積み上げグラフ。">
-      <!-- scale: 0..7000万 -> 0..450px, x0=150 -->
-      <!-- 中海岸 (win) 交渉後4800: 土地3870=249 残930=60 -->
       <g>
         <text class="barlabel win" x="142" y="42" text-anchor="end">中海岸2丁目</text>
-        <text class="barsub" x="142" y="57" text-anchor="end">約4,800万・素81%</text>
+        <text class="barsub" x="142" y="57" text-anchor="end">約4,800万</text>
         <rect x="150" y="30" width="249" height="26" rx="4" fill="#2a78d6"><title>中海岸2丁目：土地の見積もり 3,870万（110万/坪×35.2坪）</title></rect>
         <rect x="401" y="30" width="60" height="26" rx="4" fill="#d9d8d2"><title>そのほか（建物など）約930万</title></rect>
         <text class="barval" x="469" y="48">土地3,870万</text>
       </g>
-      <!-- toiro 土地5112=329 残1568=101 -->
       <g>
         <text class="barlabel" x="142" y="98" text-anchor="end">辻堂6丁目 toiro</text>
-        <text class="barsub" x="142" y="113" text-anchor="end">6,680万・素77%</text>
-        <rect x="150" y="86" width="329" height="26" rx="4" fill="#6da7ec"><title>toiro：土地の見積もり 5,112万（120万/坪×42.6坪）</title></rect>
+        <text class="barsub" x="142" y="113" text-anchor="end">6,680万</text>
+        <rect x="150" y="86" width="329" height="26" rx="4" fill="#6da7ec"><title>toiro：土地の見積もり（相場どおり）5,112万。ただし土地の形が旗竿ぎみで実力は約4,000万相当</title></rect>
         <rect x="481" y="86" width="101" height="26" rx="4" fill="#d9d8d2"><title>そのほか 約1,568万</title></rect>
         <text class="barval" x="590" y="104">土地5,112万</text>
       </g>
-      <!-- 東海岸南 土地3629=233 残1151=74 -->
       <g>
         <text class="barlabel" x="142" y="154" text-anchor="end">東海岸南6丁目</text>
-        <text class="barsub" x="142" y="169" text-anchor="end">4,780万・素76%</text>
+        <text class="barsub" x="142" y="169" text-anchor="end">4,780万</text>
         <rect x="150" y="142" width="233" height="26" rx="4" fill="#6da7ec"><title>東海岸南：土地の見積もり 3,629万（95.5万/坪×38坪）</title></rect>
         <rect x="385" y="142" width="74" height="26" rx="4" fill="#d9d8d2"><title>そのほか 約1,151万</title></rect>
         <text class="barval" x="467" y="160">土地3,629万</text>
       </g>
-      <!-- 南湖7丁目 土地2565=165 残1415=91 -->
       <g>
         <text class="barlabel" x="142" y="210" text-anchor="end">南湖7丁目</text>
-        <text class="barsub" x="142" y="225" text-anchor="end">3,980万・素64%</text>
+        <text class="barsub" x="142" y="225" text-anchor="end">3,980万</text>
         <rect x="150" y="198" width="165" height="26" rx="4" fill="#eb9d3a"><title>南湖7丁目：土地の見積もり 2,565万（83万/坪×30.9坪）</title></rect>
         <rect x="317" y="198" width="91" height="26" rx="4" fill="#d9d8d2"><title>そのほか 約1,415万</title></rect>
         <text class="barval" x="416" y="216">土地2,565万</text>
       </g>
-      <!-- 南湖ミサワ 土地2988=192 残1912=123 -->
       <g>
         <text class="barlabel" x="142" y="266" text-anchor="end">南湖ミサワ</text>
-        <text class="barsub" x="142" y="281" text-anchor="end">4,900万・素61%</text>
+        <text class="barsub" x="142" y="281" text-anchor="end">4,900万</text>
         <rect x="150" y="254" width="192" height="26" rx="4" fill="#eb9d3a"><title>南湖ミサワ：土地の見積もり 2,988万（83万/坪×36坪）</title></rect>
         <rect x="344" y="254" width="123" height="26" rx="4" fill="#d9d8d2"><title>そのほか 約1,912万</title></rect>
         <text class="barval" x="475" y="272">土地2,988万</text>
@@ -159,16 +158,17 @@
       <text class="barsub" x="343" y="312" text-anchor="middle">3,000万</text>
       <text class="barsub" x="536" y="312" text-anchor="middle">6,000万</text>
     </svg>
-    <figcaption>「素81%」などは、値段のうち土地が占める割合。青（土地）が長く・割合が高いほど、将来値下がりしにくい家です。※土地の見積もり額＝その町の土地相場（1坪あたり）×敷地の広さ（坪）。</figcaption>
+    <figcaption>青＝土地の見積もり額（その町の土地相場 1坪あたり × 敷地の広さ）。ここに「土地の形」を加味した“実力の割合”は、下の表の一段目に。</figcaption>
   </figure>
 
   <div class="analogy">
-    <b>土地の見積もり額って？</b> ―― その町で土地が1坪いくらで売買されているか（相場）に、その家の敷地の広さ（坪数）をかけた金額です。<br>
-    たとえば中海岸2丁目は、<b>1坪110万 × 35.2坪 ＝ 約3,870万</b>。約4,800万のうち約3,870万が土地なので、<b>約81%が土地</b>。ここが安心の芯です。
+    <b>土地の見積もり額と「実力の割合」</b><br>
+    見積もり額は〈相場（1坪いくら）× 敷地の広さ〉。たとえば中海岸は 1坪110万 × 35.2坪 ＝ 約3,870万。<br>
+    ただし<b>土地の「形」も大事</b>です。角地・整形なら相場どおり以上、旗竿ぎみだと相場より下がります。これを反映した“実力の割合”は、<b>中海岸 約85%（角地でむしろ相場以上）／ toiro 約60%（旗竿ぎみで相場より下）</b>。土地の強さは中海岸がいちばんです。
   </div>
 
   <h2><span class="num">2.</span> 5つの家を、ぜんぶ横ならびで</h2>
-  <p>見方は <span class="mark mo"><span class="dot do"></span>○=良い</span>／<span class="mark ma"><span class="dot da"></span>△=あと一歩・許容範囲</span>／<span class="mark mx"><span class="dot dx"></span>×=弱い</span> です。値段は<b>値引き後の見込み</b>で並べています。</p>
+  <p>見方は <span class="mark mo"><span class="dot do"></span>○=良い</span>／<span class="mark ma"><span class="dot da"></span>△=あと一歩・許容範囲</span>／<span class="mark mx"><span class="dot dx"></span>×=弱い</span>。値段は<b>値引き後の見込み</b>です。</p>
 
   <div class="tablewrap">
   <table>
@@ -200,12 +200,20 @@
         <td>2,988万</td>
       </tr>
       <tr>
-        <th>値下がりしにくさ<br><small>（土地の割合）</small></th>
-        <td class="col-win"><span class="mark mo"><span class="dot do"></span>○ 81%</span></td>
-        <td><span class="mark mo"><span class="dot do"></span>○ 77%</span></td>
+        <th>値下がりしにくさ<br><small>（土地の実力の割合）</small></th>
+        <td class="col-win"><span class="mark mo"><span class="dot do"></span>○ 約85%</span></td>
+        <td><span class="mark ma"><span class="dot da"></span>△ 約60%</span></td>
         <td><span class="mark mo"><span class="dot do"></span>○ 76%</span></td>
         <td><span class="mark ma"><span class="dot da"></span>△ 64%</span></td>
-        <td><span class="mark mx"><span class="dot dx"></span>× 61%</span></td>
+        <td><span class="mark mx"><span class="dot dx"></span>× 52%</span></td>
+      </tr>
+      <tr>
+        <th>土地の形</th>
+        <td class="col-win"><span class="mark mo"><span class="dot do"></span>○ 角地・整形</span></td>
+        <td><span class="mark ma"><span class="dot da"></span>△ 旗竿ぎみ</span></td>
+        <td><span class="mark mo"><span class="dot do"></span>○ 角地・整形</span></td>
+        <td><span class="mark mo"><span class="dot do"></span>○ 整形</span></td>
+        <td><span class="mark ma"><span class="dot da"></span>△ 旗竿ぎみ</span></td>
       </tr>
       <tr>
         <th>災害の安全<br><small>（津波の浸水想定）</small></th>
@@ -233,19 +241,19 @@
       </tr>
       <tr>
         <th>修繕の上乗せ<br><small>（初期・目安）</small></th>
-        <td class="col-win">＋100〜200万<br><small>外壁・水回り</small></td>
-        <td>＋約300万<br><small>外壁・デッキ</small></td>
-        <td>＋約250万<br><small>雨漏り・外壁</small></td>
-        <td>＋約200万<br><small>外壁ほか</small></td>
-        <td>＋約80万<br><small>築浅で少なめ</small></td>
+        <td class="col-win">＋100〜200万</td>
+        <td>＋約300万</td>
+        <td>＋約250万</td>
+        <td>＋約200万</td>
+        <td>＋約80万</td>
       </tr>
       <tr>
-        <th>予算<br><small>（月16万以内か）</small></th>
-        <td class="col-win"><span class="mark mo"><span class="dot do"></span>○ 15.4万</span></td>
-        <td><span class="mark mx"><span class="dot dx"></span>× 20.8万</span></td>
-        <td><span class="mark mo"><span class="dot do"></span>○ 15.4万</span></td>
-        <td><span class="mark mo"><span class="dot do"></span>○ 13.1万</span></td>
-        <td><span class="mark mo"><span class="dot do"></span>○ 15.7万</span></td>
+        <th>毎月の支払い<br><small>（返済＋固定資産税）</small></th>
+        <td class="col-win"><span class="mark mo"><span class="dot do"></span>○ 14.2万</span></td>
+        <td><span class="mark mx"><span class="dot dx"></span>× 20.3万</span></td>
+        <td><span class="mark mo"><span class="dot do"></span>○ 13.7万</span></td>
+        <td><span class="mark mo"><span class="dot do"></span>○ 11.4万</span></td>
+        <td><span class="mark mo"><span class="dot do"></span>○ 14.9万</span></td>
       </tr>
       <tr class="verdict-row">
         <th>そうごう</th>
@@ -258,68 +266,80 @@
     </tbody>
   </table>
   </div>
-  <p><small>※「素81%」＝土地の割合。70%以上が安心ライン。／「月◯万」＝ローン返済＋固定資産税＋修繕つみたての合計目安（頭金は母からの贈与610万を想定・修繕の初期上乗せは含まず）。</small></p>
+  <p><small>※「土地の実力の割合」＝相場×坪に、土地の形（角地はプラス／旗竿はマイナス）を反映した値。70%以上が安心ライン。／毎月の支払いは、諸費用込みの借入をローン1.1%・35年で返した額＋固定資産税（リフォーム・修繕つみたては除外）。</small></p>
 
-  <h2><span class="num">3.</span> 津波について ―― 湘南に住む以上の「割り切り」</h2>
-  <div class="card">
-    <p style="margin-bottom:8px">湘南の海側に住む以上、津波リスクはある程度は受け入れる前提です。<b>大事なのは「その場所が命に関わる浸水になるか」</b>。柳島・中島のような一気に深く浸かる場所は避けますが、そこまででなければ許容範囲です。</p>
-    <p style="margin:0" class="lead">
-      ・<b>中海岸2丁目＝浸水想定1m</b>：湘南ではかなり浅い方。避難で十分対応できる水準で、安心して選べます。<br>
-      ・<b>東海岸南・南湖＝5m級</b>：中海岸より深く、将来の売りやすさでもやや不利。ただし柳島・中島ほどではないので、他が良ければ許容の範囲。<br>
-      → 低いほど良いのは確かで、<b>この点でも中海岸2丁目がいちばん安心</b>です。
-    </p>
+  <h2><span class="num">3.</span> 毎月いくら払う？ ―― お金の内訳</h2>
+  <p>頭金は母からの贈与610万、ローンは金利1.1%・35年。<b>物件の値段に諸費用（約7%）を足し、贈与を引いた額</b>を借ります（リフォームは別のお財布として除外）。</p>
+
+  <div class="tablewrap">
+  <table class="fin">
+    <thead>
+      <tr><th style="text-align:left">項目</th><th>中海岸2丁目</th><th>辻堂 toiro</th><th>東海岸南</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>物件の値段</th><td>4,800万</td><td>6,680万</td><td>4,780万</td></tr>
+      <tr><th>＋ 諸費用（約7%）</th><td>348万</td><td>452万</td><td>347万</td></tr>
+      <tr><th>− 贈与（頭金）</th><td>610万</td><td>610万</td><td>610万</td></tr>
+      <tr class="win"><th>＝ 借入額</th><td>4,538万</td><td>6,522万</td><td>4,517万</td></tr>
+      <tr><th>ローン返済／月</th><td>13.0万</td><td>18.7万</td><td>13.0万</td></tr>
+      <tr><th>＋ 固定資産税／月</th><td>1.1万</td><td>1.6万</td><td>0.7万</td></tr>
+      <tr class="win"><th>＝ 毎月の支払い</th><td>14.2万</td><td>20.3万</td><td>13.7万</td></tr>
+    </tbody>
+  </table>
   </div>
-
-  <h2><span class="num">4.</span> 修繕の上乗せは、実は「どの家もだいたい同じ」</h2>
-  <div class="card">
-    <p style="margin-bottom:8px">中海岸2丁目は外壁がそろそろ必要で、水回りも含めると<b>+100〜200万</b>ほど見ておきます。ただし、これは中海岸だけの弱点ではありません。</p>
-    <p style="margin:0" class="lead">
-      toiroもウッドデッキを作れば＋300万、数年以内に外壁も。東海岸南は雨漏りの手当て＋外壁。<b>築年数が近ければ、修繕の上乗せはどの家もだいたい同じ</b>で、決め手にはなりません（唯一、築7年の南湖ミサワだけは修繕が少なめですが、土地の割合が61%と低いのが響きます）。<br>
-      修繕込みの「実質の総額」で見ても、<b>中海岸 約4,950万 ＜ toiro 約6,980万</b>で、順位は変わりません。中海岸に150万を足しても、毎月の住居費は約15.8万で予算内に収まります。
-    </p>
-  </div>
-
-  <h2><span class="num">5.</span> 予算 ―― 中海岸なら、今の家賃の範囲</h2>
-  <p>各家に住んだ場合の<b>毎月の住居費</b>です。赤い線が<b>今の家賃（月16万）</b>。中海岸2丁目はこの線の内側（月15.4万）。toiroだけが線を超えます（月20.8万）。</p>
 
   <figure>
-    <svg viewBox="0 0 660 300" width="100%" role="img" aria-label="各家の毎月の住居費。今の家賃16万の線と比較。中海岸15.4万、toiro20.8万など。">
+    <svg viewBox="0 0 660 300" width="100%" role="img" aria-label="各家の毎月の支払い。今の家賃16万の線と比較。中海岸14.2万、toiro20.3万など。">
       <line class="refline" x1="463" y1="18" x2="463" y2="250"></line>
       <text class="reftext" x="463" y="270" text-anchor="middle">今の家賃 16万</text>
-      <!-- 中海岸 15.4 -> 301 -->
       <g>
         <text class="barlabel win" x="142" y="46" text-anchor="end">中海岸2丁目</text>
-        <rect x="150" y="32" width="301" height="24" rx="5" fill="#0ca30c"><title>中海岸2丁目：月15.4万（予算内）</title></rect>
-        <text class="barval" x="459" y="49">15.4万</text>
+        <rect x="150" y="32" width="277" height="24" rx="5" fill="#0ca30c"><title>中海岸2丁目：月14.2万（予算内）</title></rect>
+        <text class="barval" x="435" y="49">14.2万</text>
       </g>
-      <!-- 南湖7丁目 13.1 -> 256 -->
       <g>
         <text class="barlabel" x="142" y="90" text-anchor="end">南湖7丁目</text>
-        <rect x="150" y="76" width="256" height="24" rx="5" fill="#1baf7a"><title>南湖7丁目：月13.1万</title></rect>
-        <text class="barval" x="414" y="93">13.1万</text>
+        <rect x="150" y="76" width="222" height="24" rx="5" fill="#1baf7a"><title>南湖7丁目：月11.4万</title></rect>
+        <text class="barval" x="380" y="93">11.4万</text>
       </g>
-      <!-- 東海岸南 15.4 -> 301 -->
       <g>
         <text class="barlabel" x="142" y="134" text-anchor="end">東海岸南6丁目</text>
-        <rect x="150" y="120" width="301" height="24" rx="5" fill="#1baf7a"><title>東海岸南：月15.4万</title></rect>
-        <text class="barval" x="459" y="137">15.4万</text>
+        <rect x="150" y="120" width="267" height="24" rx="5" fill="#1baf7a"><title>東海岸南：月13.7万</title></rect>
+        <text class="barval" x="425" y="137">13.7万</text>
       </g>
-      <!-- 南湖ミサワ 15.7 -> 307 -->
       <g>
         <text class="barlabel" x="142" y="178" text-anchor="end">南湖ミサワ</text>
-        <rect x="150" y="164" width="307" height="24" rx="5" fill="#1baf7a"><title>南湖ミサワ：月15.7万</title></rect>
-        <text class="barval" x="465" y="181">15.7万</text>
+        <rect x="150" y="164" width="290" height="24" rx="5" fill="#1baf7a"><title>南湖ミサワ：月14.9万</title></rect>
+        <text class="barval" x="448" y="181">14.9万</text>
       </g>
-      <!-- toiro 20.8 -> 406 -->
       <g>
         <text class="barlabel" x="142" y="222" text-anchor="end">辻堂 toiro</text>
-        <rect x="150" y="208" width="406" height="24" rx="5" fill="#e59700"><title>toiro：月20.8万（予算オーバー）</title></rect>
-        <text class="barval" x="564" y="225">20.8万</text>
+        <rect x="150" y="208" width="397" height="24" rx="5" fill="#e59700"><title>toiro：月20.3万（予算オーバー）</title></rect>
+        <text class="barval" x="555" y="225">20.3万</text>
       </g>
       <line x1="150" y1="250" x2="150" y2="18" stroke="#c3c2b7"></line>
     </svg>
-    <figcaption>毎月の住居費（ローン＋固定資産税＋修繕つみたて）。赤線＝今の家賃16万。中海岸は内側、toiroだけ外側。</figcaption>
+    <figcaption>毎月の支払い（ローン返済＋固定資産税）。赤線＝今の家賃16万。中海岸は約1.9万の余裕。修繕100〜200万をローンに足しても月14.5万ほどで、まだ内側。</figcaption>
   </figure>
+  <p><small>※諸費用の内訳：仲介手数料・登記・ローン事務手数料（借入の2.2%）・火災保険・不動産取得税・固定資産税精算など。ローン手数料を定額型にすると60〜100万圧縮できます。固定資産税は概算で、正確には売主の納税通知書で確認します。</small></p>
+
+  <h2><span class="num">4.</span> 土地の相場（坪単価）は、どこから来た数字？</h2>
+  <div class="card">
+    <p style="margin-bottom:8px">土地の相場は、<b>国が公表している実際の土地取引データ（茅ヶ崎・藤沢の直近3年）</b>の“真ん中の値段”を使っています。使っている坪単価は ―― 中海岸110万／辻堂120万／東海岸南95.5万／南湖83万（1坪あたり）。</p>
+    <p style="margin:0" class="lead">
+      確からしさは町で差があります。辻堂・東海岸南・南湖は取引件数が30〜41件と十分で信頼できます。<b>中海岸だけは直近の取引が17件と少なめ</b>で、少し前は86万でした。つまり<b>中海岸の相場は控えめに見ており、実際はもう少し高い（本間の見立てでは坪120近い）可能性</b>があります。もしそうなら、中海岸の“土地の割合”はさらに上がり、より有利になります。
+    </p>
+  </div>
+
+  <h2><span class="num">5.</span> 津波について ―― 湘南の「割り切り」</h2>
+  <div class="card">
+    <p style="margin-bottom:8px">湘南の海側に住む以上、津波リスクはある程度受け入れる前提です。大事なのは<b>「命に関わる深さになるか」</b>。一気に深く浸かる場所（柳島・中島のような所）は避けますが、そこまででなければ許容範囲です。</p>
+    <p style="margin:0" class="lead">
+      ・<b>中海岸2丁目＝浸水想定1m</b>：湘南では浅い方。避難で十分対応でき、安心して選べます。<br>
+      ・<b>東海岸南・南湖＝5m級</b>：中海岸より深く、将来の売りやすさでもやや不利。ただし柳島・中島ほどではないので、他が良ければ許容の範囲。<br>
+      → この点でも<b>中海岸2丁目がいちばん安心</b>です。
+    </p>
+  </div>
 
   <hr>
 
@@ -327,30 +347,30 @@
   <div class="final">
     <div class="frow">
       <span class="fico b">1</span>
-      <div><b>中海岸2丁目（約4,800万）を本命に進める</b>
-        <span class="desc">→ 土地の割合が最も高く（81%）・駅徒歩14分・浸水1m・予算に収まる、唯一の家。次の一歩は、値引き交渉（4,800前後）と、外壁など修繕の見積もり取り。</span></div>
+      <div><b>中海岸2丁目（約4,800万・毎月14.2万）を本命に進める</b>
+        <span class="desc">→ 土地の実力が最も高く（約85%）・角地整形・駅徒歩14分・浸水1m・予算に収まる、唯一の家。次の一歩は、値引き交渉（4,800前後）と、外壁など修繕の見積もり、固定資産税の確認。</span></div>
     </div>
     <div class="frow">
       <span class="fico g">2</span>
-      <div><b>辻堂 toiro（6,680万）は「予算を上げてもいいなら」の上位候補</b>
-        <span class="desc">→ いちばん新しく（築12年）・完全に内陸で安心だが、月4万ほど予算オーバー。中海岸がダメだったときの受け皿にも。</span></div>
+      <div><b>辻堂 toiro（6,680万・毎月20.3万）は「予算を上げてもいいなら」</b>
+        <span class="desc">→ いちばん新しく内陸で安心だが、予算オーバー＋土地が旗竿ぎみ（実力60%）。三角地を買えれば土地は整形化する。中海岸がダメだったときの受け皿。</span></div>
     </div>
     <div class="frow">
       <span class="fico a">3</span>
-      <div><b>東海岸南6丁目（4,780万）は条件つき</b>
-        <span class="desc">→ 安くて土地も良いが、駅から徒歩25分が日々こたえる。津波5m級は許容範囲だが中海岸より不利。</span></div>
+      <div><b>東海岸南6丁目（4,780万・毎月13.7万）は条件つき</b>
+        <span class="desc">→ 安くて土地も良い（整形76%）が、駅から徒歩25分が日々こたえる。津波5m級は許容範囲だが中海岸より不利。</span></div>
     </div>
     <div class="frow">
       <span class="fico x">×</span>
       <div><b>南湖7丁目・南湖ミサワは見送り</b>
-        <span class="desc">→ 南湖7丁目は土地の割合が低く（64%）駅がバス便。南湖ミサワは築が新しいわりに割高。</span></div>
+        <span class="desc">→ 南湖7丁目は土地の割合が低く（64%）駅がバス便。南湖ミサワは旗竿ぎみで土地の実力52%・築が新しいわりに割高。</span></div>
     </div>
   </div>
 
   <p class="foot">
-    この資料は、我が家の検討のためにまとめたものです。ねだん・数字は2026年7月時点で、契約前に最新情報で確認します。値段は値引き後の見込みを含みます。<br>
-    「土地の見積もり額」は〈その町の土地相場（1坪あたり）×敷地の広さ（坪）〉で計算しています。相場は国の取引データ（茅ヶ崎・藤沢の実際の売買）をもとにした、控えめ寄りの数字です。<br>
-    津波の浸水想定は茅ヶ崎市の公式ハザードマップ（2025年3月更新）によります。修繕の上乗せは築年数からの概算です。専門的な評価（積算・相場との差など）は別の資料にまとめてあります。<br>
+    この資料は我が家の検討用です。数字は2026年7月時点で、契約前に最新情報で確認します。値段は値引き後の見込みを含みます。<br>
+    「土地の見積もり額」は〈その町の土地相場（1坪あたり）×敷地の広さ〉。相場は国の取引データ（茅ヶ崎・藤沢の実際の売買、直近3年の中央値）で、控えめ寄りの数字です。「実力の割合」はこれに土地の形（角地＝プラス／旗竿＝マイナス）を反映しています。<br>
+    毎月の支払いは、諸費用込みの借入をローン1.1%・35年で返した額＋固定資産税（概算）。頭金は母からの贈与610万。リフォーム・修繕つみたては除外しています。津波の浸水想定は茅ヶ崎市の公式ハザードマップ（2025年3月更新）によります。<br>
     ― URLを知っている人だけが見られる、検索に出ない共有ページです。
   </p>
 
